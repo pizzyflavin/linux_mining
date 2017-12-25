@@ -48,9 +48,9 @@ sudo apt-get update
 sudo apt-get -y install cpp-ethereum
 sudo apt-get -y install software-properties-common
 
+sudo nvidia-xconfig --enable-all-gpus
+sudo nvidia-xconfig --cool-bits=28
 echo
 echo "GPU Driver installation is now complete"
 echo
-echo "Run nvidia-xconfig --enable-all-gpus and nvidia-xconfig --cool-bits=12"
-echo "Then reboot the system"
-echo "(or run sudo systemctl restart lightdm.service)"
+echo "Restart or run sudo systemctl restart lightdm.service"
