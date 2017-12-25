@@ -1,1 +1,11 @@
-All fucked dont use anything until updated
+# Linux Mining README
+
+### Currencies
+- ZCash (ZEC)
+- ZClassic (ZCL)
+- Ethereum (ETH)
+
+### Miners
+- EWBF
+- Claymore10
+
