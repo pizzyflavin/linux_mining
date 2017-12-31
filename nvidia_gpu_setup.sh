@@ -9,7 +9,7 @@
 
 # Get CUDA Toolkit from NVIDIA
 CUDA_FILE=cuda_9.1.85_387.26_linux
-if [ ! -f $CUDA_FILE ]; then
+if [ ! -f ~/Downloads/$CUDA_FILE ]; then
     wget https://developer.nvidia.com/compute/cuda/9.1/Prod/local_installers/$CUDA_FILE -P ~/Downloads
 fi
 
@@ -51,8 +51,8 @@ sudo apt-get update
 sudo apt-get -y install cpp-ethereum
 sudo apt-get -y install software-properties-common
 
-sudo nvidia-xconfig --enable-all-gpus
-sudo nvidia-xconfig --cool-bits=28
+sudo nvidia-xconfig -a --allow-empty-initial-configuration --cool-bits=28 --use-display-device="DFP-0" --connected-monitor="DFP-0" --enable-all-gpus
+
 echo
 echo "GPU Driver installation is now complete"
 echo
