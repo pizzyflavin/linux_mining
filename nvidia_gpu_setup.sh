@@ -8,7 +8,10 @@
 ##############################################################################
 
 # Get CUDA Toolkit from NVIDIA
-#wget https://developer.nvidia.com/compute/cuda/9.1/Prod/local_installers/cuda_9.1.85_387.26_linux
+CUDA_FILE=cuda_9.1.85_387.26_linux
+if [ ! -f $CUDA_FILE ]; then
+    wget https://developer.nvidia.com/compute/cuda/9.1/Prod/local_installers/$CUDA_FILE -P ~/Downloads
+fi
 
 # Install dependencies
 sudo add-apt-repository main
@@ -24,24 +27,24 @@ sudo apt-get install -y libmicrohttpd-dev libssl-dev cmake build-essential
 sudo apt-get install -y automake libtool make gcc gcc4-9 libjansson-dev
 sudo apt-get upgrade -y
 
-sudo apt-get purge nvidia-* -y
-sudo apt-get purge nvidia-cuda* -y
+sudo apt-get -y purge nvidia-*
+sudo apt-get -y purge nvidia-cuda*
 sudo update-initramfs -u
-sudo apt-get install -y libopenblas-dev liblapack-dev
-sudo apt-get install -y linux-image-generic linux-image-extra-virtual
-sudo apt-get install -y linux-source linux-headers-generic
-sudo apt-get install -y nvidia-common nvidia-prime nvidia-settings
-sudo apt-get install -y nvidia-375
+sudo apt-get -y install libopenblas-dev liblapack-dev
+sudo apt-get -y install linux-image-generic linux-image-extra-virtual
+sudo apt-get -y install linux-source linux-headers-generic
+sudo apt-get -y install nvidia-common nvidia-prime nvidia-settings
+sudo apt-get -y install nvidia-375
 
-sudo apt-get install -y libglu1-mesa libxi-dev libxmu-dev libglu1-mesa-dev
-sudo apt-get install -y python-pip python-dev python-numpy python-scipy
-sudo apt-get install -y apt-file && apt-file update
+sudo apt-get -y install libglu1-mesa libxi-dev libxmu-dev libglu1-mesa-dev
+sudo apt-get -y install python-pip python-dev python-numpy python-scipy
+sudo apt-get -y install apt-file && apt-file update
 
 # Install Cuda Toolkit
-sudo chmod +x ~/Downloads/cuda_9.1.85_387.26_linux
-sudo ~/Downloads/cuda_9.1.85_387.26_linux --driver --silent
-sudo ~/Downloads/cuda_9.1.85_387.26_linux --toolkit --silent
-sudo ~/Downloads/cuda_9.1.85_387.26_linux --samples --silent
+sudo chmod +x ~/Downloads/$CUDA_FILE
+sudo ~/Downloads/$CUDA_FILE --driver --silent
+sudo ~/Downloads/$CUDA_FILE --toolkit --silent
+sudo ~/Downloads/$CUDA_FILE --samples --silent
 
 sudo add-apt-repository -y ppa:ethereum/ethereum
 sudo apt-get update
