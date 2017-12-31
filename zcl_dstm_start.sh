@@ -27,4 +27,4 @@ PORT=4042
 #=========================
 # Create instance of miner
 #=========================
-screen -d -m -S zclm sudo $MINER --server $SERVER --port $PORT --user $USER --pass x --dev 0 1 2 3 4 5
+screen -d -m -S zclm sudo $MINER --server $SERVER --port $PORT --user $USER --pass x --dev 0 1 2 3 4 5 6 7
