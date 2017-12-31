@@ -10,4 +10,4 @@ sudo sh -c 'echo "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stabl
 
 # Update and install essential packages
 sudo apt-get update
-yes | sudo apt-get install git vim google-chrome-stable openssh-server
+sudo apt-get -y install git vim google-chrome-stable openssh-server
