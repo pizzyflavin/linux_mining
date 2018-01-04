@@ -27,4 +27,4 @@ PORT=4042
 #=========================
 # Create instance of miner
 #=========================
-screen -d -m -S zclm sudo $MINER --server $SERVER --user $USER --pass x --port $PORT --cuda_devices 0 1 2 3 4 5 --api 127.0.0.1:42000 --fee 1.0
+screen -d -m -S zclm $MINER --server $SERVER --user $USER --pass x --port $PORT --cuda_devices 0 1 2 3 4 5 6 7 --api 127.0.0.1:42000 --fee 0.1
