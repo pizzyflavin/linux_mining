@@ -25,6 +25,11 @@ SERVER='zcl.suprnova.cc'
 PORT=4042
 
 #=========================
+# Log Path Setup
+#=========================
+LOGFILE='log/dstm_zm.log'
+
+#=========================
 # Create instance of miner
 #=========================
-screen -d -m -S zclm $MINER --server $SERVER --port $PORT --user $USER --pass x --dev 0 1 2 3 4 5 6 7
+screen -d -m -S zclm $MINER --server $SERVER --port $PORT --user $USER --pass x --dev 0 1 2 3 4 5 6 7 --logfile=$LOGFILE
