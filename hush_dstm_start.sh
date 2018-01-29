@@ -10,9 +10,9 @@ fi
 sleep $DELAY
 
 #===============
-# My ZCL Address
+# My Hush Address
 #===============
-ADDRESS=t1ZPHEGdTDsWk3Skx9oMDCRjFaknUbXwA1F
+#ADDRESS= not used
 WEBLOGIN=pizzyflavin
 WORKER=SirNose
 USER=$WEBLOGIN.$WORKER
