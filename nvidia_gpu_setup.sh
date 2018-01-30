@@ -51,7 +51,7 @@ sudo apt-get update
 sudo apt-get -y install cpp-ethereum
 sudo apt-get -y install software-properties-common
 
-sudo nvidia-xconfig -a --allow-empty-initial-configuration --cool-bits=28 --use-display-device="DFP-0" --connected-monitor="DFP-0" --enable-all-gpus
+sudo nvidia-xconfig -a --allow-empty-initial-configuration --cool-bits=28 --use-display-device="DFP-0" --connected-monitor="DFP-0"
 
 echo
 echo "GPU Driver installation is now complete"
