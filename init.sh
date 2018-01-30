@@ -7,7 +7,7 @@
 ./monitor_GPUs.sh
 
 # Set power limits and fan settings.
-./init_GPUs.sh
+sudo ./init_GPUs.sh
 
 # Apply overclocking to cards
 ./overclock.sh
