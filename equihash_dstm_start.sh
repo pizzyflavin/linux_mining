@@ -19,7 +19,7 @@ USER=$WEBLOGIN.$WORKER
 #========================
 # Miner and Pool Settings
 #========================
-MINER='miners/dstm/zm_0.5.8/zm'
+MINER='miners/dstm/zm_0.6/zm'
 
 MPHUB_SERVER='us-east.equihash-hub.miningpoolhub.com'
 
