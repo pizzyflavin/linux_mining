@@ -7,7 +7,7 @@
 nvidia-smi -pm 1 
 
 # Set power limit in W
-nvidia-smi -pl 110
+nvidia-smi -pl 108
 
 # Fan Control
 nvidia-settings -c :0 -a '[gpu:0]/GPUFanControlState=1'
@@ -20,12 +20,5 @@ nvidia-settings -c :0 -a '[gpu:6]/GPUFanControlState=1'
 nvidia-settings -c :0 -a '[gpu:7]/GPUFanControlState=1'
 
 # Fan Speed
-nvidia-settings -c :0 -a '[fan:0]/GPUTargetFanSpeed=80'
-nvidia-settings -c :0 -a '[fan:1]/GPUTargetFanSpeed=80'
-nvidia-settings -c :0 -a '[fan:2]/GPUTargetFanSpeed=80'
-nvidia-settings -c :0 -a '[fan:3]/GPUTargetFanSpeed=80'
-nvidia-settings -c :0 -a '[fan:4]/GPUTargetFanSpeed=80'
-nvidia-settings -c :0 -a '[fan:5]/GPUTargetFanSpeed=80'
-nvidia-settings -c :0 -a '[fan:6]/GPUTargetFanSpeed=80'
-nvidia-settings -c :0 -a '[fan:7]/GPUTargetFanSpeed=80'
+bash set_fan_speed.sh
 
