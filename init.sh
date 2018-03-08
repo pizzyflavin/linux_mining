@@ -4,11 +4,11 @@
 
 # Start logging GPU data (This is the same info that is output to the terminal
 # when the miner is run)
-./monitor_GPUs.sh
+bash monitor_GPUs.sh
 
 # Set power limits and fan settings.
-sudo ./init_GPUs.sh
+sudo bash init_GPUs.sh
 
 # Apply overclocking to cards
-./overclock.sh
+bash overclock.sh
 
