@@ -33,4 +33,4 @@ LOGFILE='log/dstm_zm.log'
 #=========================
 # Create instance of miner
 #=========================
-screen -d -m -S zclm $MINER --server $MPHUB_SERVER --port $MPHUB_PORT --user $USER --pass x --dev 0 1 2 3 4 5 6 7 --logfile=$LOGFILE --color
+screen -d -m -S eqm $MINER --server $MPHUB_SERVER --port $MPHUB_PORT --user $USER --pass x --dev 0 1 2 3 4 5 6 7 --logfile=$LOGFILE --color
