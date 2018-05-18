@@ -7,7 +7,7 @@
 nvidia-smi -pm 1 
 
 # Set power limit in W
-nvidia-smi -pl 108
+nvidia-smi -pl 110
 
 # Fan Control
 nvidia-settings -c :0 -a '[gpu:0]/GPUFanControlState=1'
