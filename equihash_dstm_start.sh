@@ -9,28 +9,13 @@ else
 fi
 sleep $DELAY
 
-#===============
-# Login Info
-#===============
-WEBLOGIN=pizzyflavin
-WORKER=SirNose
-USER=$WEBLOGIN.$WORKER
-
 #========================
-# Miner and Pool Settings
+# Miner Settings
 #========================
 MINER='miners/dstm/zm_0.6/zm'
-
-MPHUB_SERVER='us-east.equihash-hub.miningpoolhub.com'
-
-MPHUB_PORT=17023
-
-#=========================
-# Log Path Setup
-#=========================
-LOGFILE='log/dstm_zm.log'
 
 #=========================
 # Create instance of miner
 #=========================
-screen -d -m -S eqm $MINER --server $MPHUB_SERVER --port $MPHUB_PORT --user $USER --pass x --dev 0 1 2 3 4 5 6 7 --logfile=$LOGFILE --color
+screen -d -m -S eqm $MINER --cfg-file='zm.cfg'
+
