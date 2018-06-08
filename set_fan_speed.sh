@@ -2,6 +2,7 @@
 
 FANSPEED=80
 
+nvidia-settings -c :0 -a "[fan:0]/GPUTargetFanSpeed=$FANSPEED"
 nvidia-settings -c :0 -a "[fan:1]/GPUTargetFanSpeed=$FANSPEED"
 nvidia-settings -c :0 -a "[fan:1]/GPUTargetFanSpeed=$FANSPEED"
 nvidia-settings -c :0 -a "[fan:2]/GPUTargetFanSpeed=$FANSPEED"
