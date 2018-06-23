@@ -12,7 +12,9 @@ nvidia-settings -c :0 -a '[gpu:7]/GPUMemoryTransferRateOffset[3]=600' &
 
 wait
 
-echo "\nGPU memory offsets set\n"
+echo ""
+echo "GPU memory offsets set"
+echo ""
 
 # Apply Graphics OC
 nvidia-settings -c :0 -a '[gpu:0]/GPUGraphicsClockOffset[3]=150' &
@@ -26,5 +28,7 @@ nvidia-settings -c :0 -a '[gpu:7]/GPUGraphicsClockOffset[3]=150' &
 
 wait
 
-echo "\nGPU core offsets set\n"
+echo ""
+echo "GPU core offsets set"
+echo ""
 

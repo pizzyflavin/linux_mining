@@ -14,5 +14,7 @@ nvidia-settings -c :0 -a "[fan:7]/GPUTargetFanSpeed=$FANSPEED" &
 
 wait
 
-echo "\nFan speeds set\n"
+echo ""
+echo "Fan speeds set"
+echo ""
 
