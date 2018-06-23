@@ -10,14 +10,16 @@ nvidia-smi -pm 1
 nvidia-smi -pl 110
 
 # Fan Control
-nvidia-settings -c :0 -a '[gpu:0]/GPUFanControlState=1'
-nvidia-settings -c :0 -a '[gpu:1]/GPUFanControlState=1'
-nvidia-settings -c :0 -a '[gpu:2]/GPUFanControlState=1'
-nvidia-settings -c :0 -a '[gpu:3]/GPUFanControlState=1'
-nvidia-settings -c :0 -a '[gpu:4]/GPUFanControlState=1'
-nvidia-settings -c :0 -a '[gpu:5]/GPUFanControlState=1'
-nvidia-settings -c :0 -a '[gpu:6]/GPUFanControlState=1'
-nvidia-settings -c :0 -a '[gpu:7]/GPUFanControlState=1'
+nvidia-settings -c :0 -a '[gpu:0]/GPUFanControlState=1' &
+nvidia-settings -c :0 -a '[gpu:1]/GPUFanControlState=1' &
+nvidia-settings -c :0 -a '[gpu:2]/GPUFanControlState=1' &
+nvidia-settings -c :0 -a '[gpu:3]/GPUFanControlState=1' &
+nvidia-settings -c :0 -a '[gpu:4]/GPUFanControlState=1' &
+nvidia-settings -c :0 -a '[gpu:5]/GPUFanControlState=1' &
+nvidia-settings -c :0 -a '[gpu:6]/GPUFanControlState=1' &
+nvidia-settings -c :0 -a '[gpu:7]/GPUFanControlState=1' &
+
+wait
 
 # Fan Speed
 bash set_fan_speed.sh
