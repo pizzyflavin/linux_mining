@@ -1,16 +1,17 @@
 #!/usr/bin/env sh
 
-FANSPEED=80
+FAN_LOW=50
+FAN_MED=75
+FAN_HIGH=95
 
-nvidia-settings -c :0 -a "[fan:0]/GPUTargetFanSpeed=$FANSPEED" &
-nvidia-settings -c :0 -a "[fan:1]/GPUTargetFanSpeed=$FANSPEED" &
-nvidia-settings -c :0 -a "[fan:1]/GPUTargetFanSpeed=$FANSPEED" &
-nvidia-settings -c :0 -a "[fan:2]/GPUTargetFanSpeed=$FANSPEED" &
-nvidia-settings -c :0 -a "[fan:3]/GPUTargetFanSpeed=$FANSPEED" &
-nvidia-settings -c :0 -a "[fan:4]/GPUTargetFanSpeed=$FANSPEED" &
-nvidia-settings -c :0 -a "[fan:5]/GPUTargetFanSpeed=$FANSPEED" &
-nvidia-settings -c :0 -a "[fan:6]/GPUTargetFanSpeed=$FANSPEED" &
-nvidia-settings -c :0 -a "[fan:7]/GPUTargetFanSpeed=$FANSPEED" &
+nvidia-settings -c :0 -a "[fan:0]/GPUTargetFanSpeed=$FAN_MED" &
+nvidia-settings -c :0 -a "[fan:1]/GPUTargetFanSpeed=$FAN_MED" &
+nvidia-settings -c :0 -a "[fan:2]/GPUTargetFanSpeed=$FAN_MED" &
+nvidia-settings -c :0 -a "[fan:3]/GPUTargetFanSpeed=$FAN_MED" &
+nvidia-settings -c :0 -a "[fan:4]/GPUTargetFanSpeed=$FAN_MED" &
+nvidia-settings -c :0 -a "[fan:5]/GPUTargetFanSpeed=$FAN_MED" &
+nvidia-settings -c :0 -a "[fan:6]/GPUTargetFanSpeed=$FAN_MED" &
+nvidia-settings -c :0 -a "[fan:7]/GPUTargetFanSpeed=$FAN_MED" &
 
 wait
 
