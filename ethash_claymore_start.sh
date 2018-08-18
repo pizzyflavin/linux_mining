@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 MINER=./miners/claymore/claymore11.8/ethdcrminer64
-POOL=us-east.ethash-hub.miningpoolhub.com:20535
+POOL=us-east.ethash-hub.miningpoolhub.com:17020
 USERNAME=pizzyflavin
 WORKER=SirNose
 
